@@ -1,9 +1,16 @@
     body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background: url("background.jpg") no-repeat center center fixed;
-        background-size: cover;
-        color: #b30000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #b30000;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
     }
     
 
