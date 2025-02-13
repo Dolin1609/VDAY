@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #ffffff;
-    color: #ffffff;
+    color: #e60d0d;
 }
 
 .container {
@@ -14,8 +14,8 @@ h1 {
 }
 
 button {
-    background-color: #d85555;
-    color: rgb(230, 8, 8);
+    background-color: #ff0404;
+    color: rgb(253, 253, 253);
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -28,13 +28,13 @@ button:hover {
 }
 
 
-    @keyframes heartAnimation {
+@keyframes heartAnimation {
     0% {
-        transform: translateY(0) rotate(0deg);
+        transform: translate(0, 0) scale(1);
         opacity: 1;
     }
     100% {
-        transform: translateY(-200px) rotate(360deg);
+        transform: translate(calc(50vw - 50%), calc(50vh - 50%)) rotate(720deg) scale(1.5);
         opacity: 0;
     }
 }
@@ -43,7 +43,9 @@ button:hover {
     position: absolute;
     font-size: 2rem;
     color: red;
-    animation: heartAnimation 3s ease-in forwards;
+    animation: heartAnimation 10s ease-in infinite;
+    pointer-events: none;
+    z-index: 9999;
 }
 
 #surpriseMessage {
