@@ -1,9 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ffffff;
-    color: #e60d0d;
-}
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: url("background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #b30000;
+    }
+    
 
 .container {
     margin-top: 100px;
@@ -46,7 +48,14 @@ button:hover {
     animation: heartAnimation 10s ease-in infinite;
     pointer-events: none;
     z-index: 9999;
+}#surpriseImage {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
 
 #surpriseMessage {
     font-size: 1.5em;
